@@ -1,12 +1,33 @@
-class HelloMessage extends React.Component {
-
-  render () {
-    return <h1>Hello, world!</h1>
+class Timer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { seconds: 0 };
   }
-  
+
+  tick() {
+    this.setState(state => ({
+      seconds: state.seconds + 1
+    }));
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(() => this.tick(), 1000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  render() {
+    return (
+      <div>
+        Seconds: {this.state.seconds}
+      </div>
+    );
+  }
 }
 
 ReactDOM.render(
-  <HelloMessage />,
-  document.getElementById('root')
+  <Timer />,
+  document.getElementById('timer-example')
 );
