@@ -21,13 +21,13 @@ class Timer extends React.Component {
   render() {
     return (
       <div>
-        Seconds: {this.state.seconds}
+        Seconds: {this.state.seconds + +this.props.start}
       </div>
     );
   }
 }
 
 ReactDOM.render(
-  <Timer />,
+  <Timer start="10" />,
   document.getElementById('timer-example')
 );
