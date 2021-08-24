@@ -1,0 +1,88 @@
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 40px;
+  padding: 20px 40px;
+  box-shadow: 0px 0px 13px 0px #00000014;
+}
+
+.logo {
+  margin: 0;
+  font-weight: 400;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+main {
+  margin: 30px auto;
+  width: 50%;
+}
+
+main p {
+  text-align: justify;
+  color: #000;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+}
+
+.footer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 13px 0px #00000014;
+}
+
+.footer-nav {
+  margin: 20px 50px;
+  padding: 0;
+}
+
+footer .link-item {
+  display: block;
+  font-size: 0.9rem;
+  margin: 5px;
+}
+
+footer .link-item a {
+  color: rgb(78 78 78);
+}
+
+.clock {
+  text-align: center;
+  padding: 10px;
+}
+
+#search-bar-group {
+  text-align: center;
+}
