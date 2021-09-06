@@ -1,15 +1,12 @@
 import '../sass/App.scss';
-
-function Welcome() {
-  return (
-      <p>Bienvenue sur mon méga site !</p>
-  )
-}
+import Header from './Header';
+import TodoList from './TodoList';
 
 function App() {
   return (
     <>
-      <Welcome />
+      <Header />
+      <TodoList />
     </>
   );
 }
