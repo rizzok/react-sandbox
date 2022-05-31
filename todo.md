@@ -1,0 +1,2 @@
+- Form checker: if empty show message
+- Avoid redundant code: combine 2 existing form components
