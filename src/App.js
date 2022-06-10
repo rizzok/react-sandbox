@@ -1,9 +1,11 @@
+import { Accordion } from "./components/training";
+
 function App() {
-    return (
-        <div className="App">
-            <h1>React Sandbox</h1>
-        </div>
-    );
+  return (
+    <div className="App">
+      <Accordion />
+    </div>
+  );
 }
 
 export default App;
