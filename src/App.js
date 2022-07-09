@@ -1,8 +1,7 @@
 function App() {
-
   return (
-    <div className="App">
-      <h1>React Sandbox</h1>
+    <div>
+      <h1>Hello OCR!</h1>
     </div>
   );
 }
