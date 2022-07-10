@@ -1,22 +1,20 @@
-import Display from './components/Display'
-import ButtonScorePlayer from './components/ButtonScorePlayer'
-import ButtonReset from './components/ButtonReset'
-import ButtonPlayPause from './components/ButtonPlayPause'
+import { PlayPauseButton } from "./PlayPauseButton";
+import { Display } from "./Display";
+import { ResetButton } from "./ResetButton";
+import { PointScoredButton } from "./PointScoredButton";
 
-function App() {
+export default function App() {
   return (
     <div>
       <Display />
       <div className="buttons-row">
-        <ButtonScorePlayer player={'player1'} />
-        <ButtonScorePlayer player={'player2'} />
+        <PointScoredButton playerId="player1">Point Joueur 1</PointScoredButton>
+        <PointScoredButton playerId="player2">Point Joueur 2</PointScoredButton>
       </div>
       <div className="buttons-row">
-        <ButtonReset />
-        <ButtonPlayPause />
+        <ResetButton />
+        <PlayPauseButton />
       </div>
     </div>
-  )
+  );
 }
-
-export default App
